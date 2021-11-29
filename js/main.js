@@ -46,7 +46,7 @@ function playAgain() {
 
 var container = {id: "container", width: 800, height: 500};
 var player = {id: "player", x: container.width / 2, y: container.height - 50, width: 50, height: 80, speedX: 20, speedY: 5};
-var cloud = {id: "cloud", x: -150, y: 50, width: 150, height: 100, speedX: 3, speedY: 5};
+
 var objects;
 function init() {
     objects = [
@@ -166,9 +166,8 @@ function moveBalls() {
         object.centerY += object.speedY;
     }
     var img = document.getElementById("scream");
-    var imgCloud = document.getElementById("cloud");
+    
     ctx.drawImage(img, player.x, player.y, player.width, player.height);
-    ctx.drawImage(imgCloud, cloud.x, cloud.y, cloud.width, cloud.height);
     cloud.x = cloud.x + cloud.speedX;
     if (cloud.x > container.width) {
         cloud.x = (cloud.width * -1) - 20;
