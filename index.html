@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Save me</title>
+</head>
+<body>
+    
+    <div>
+        <img src="img/me.png" style="display: none;" id="scream"/>
+        <img src="img/cloud.png" style="display: none;" id="cloud"/>
+        <img src="img/restart.png" style="display: none;" id="restart"/>
+    </div>
+    <!--<div><input type='button' value="play again" onclick="playAgain()"/></div>-->
+    <h3>Save Me</h3>
+    <div id="container" >
+        <canvas id="gameCanvas"  onclick="playAgain()">
+            Your browser does not support the HTML5 canvas tag.</canvas>
+    </div>
+    <audio style="display: none;" autoplay="autoplay">
+    
+        <source src="3D_Worldrunner_Main.mid" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div style="text-align: center;"><input type="button" value="FullScreen" onclick="fullScreen()"/></div>
+    <script src="js/main.js"></script>
+</body>
+</html>

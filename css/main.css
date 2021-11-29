@@ -1,0 +1,15 @@
+h3{
+    text-align: center;
+}
+#container{
+    text-align: center;
+    padding-top:25px; 
+}
+canvas{
+    width: 800;
+    height: 500;
+    border:1px solid #d3d3d3;
+    background: url(../bac.jpg);
+    background-repeat: no-repeat;
+   
+}
