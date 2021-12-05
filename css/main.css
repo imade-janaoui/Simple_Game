@@ -8,7 +8,6 @@ h3{
 }
 #container{
     text-align: center;
-    padding-top:25px; 
    
  
 }
@@ -71,8 +70,8 @@ background-size: cover;
     top: 5%;
 }
 .discreption>div img:nth-child(5){
-    right: 19%;
-    top: 21%;
+   right: 15%;
+    top: 15%;
 }
 .discreption>div img:nth-child(6){
     right: 70%;
@@ -89,8 +88,8 @@ background-size: cover;
 .discreption>div img:nth-child(9){
     width: 43px;
     height: 54px;
-    left: 69%;
-    top: 17%;
+    right: 18%;
+    top: 15%;
 }
 .discreption>div img:nth-child(10){
     width: 43px;
@@ -139,9 +138,15 @@ background-size: cover;
  box-shadow: 0px 0px 11px 3px black;
  color: black;
 }
-#container{
-    background-image: url(../img/AdobeStock_429767427_Preview.jpeg);
-    background-position: left;
-background-repeat: no-repeat;
-background-size: cover;
+h3{
+   
+    background-image: url(../img/startup.png);
+    padding: 14px;
+    font-size: 20px;
+    color: #fff;
+    
+}
+span{
+    background-color: black;
+    padding: 15px;
 }

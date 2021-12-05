@@ -45,7 +45,7 @@ function playAgain() {
     $("#gameCanvas").attr("onclick", "");
 }
 
-var container = {id: "container", width: 1500, height: 700};
+var container = {id: "container", width: 1260, height: 550};
 var player = {id: "player", x: container.width / 2, y: container.height - 50, width: 50, height: 80, speedX: 20, speedY: 5};
 
 var objects;
