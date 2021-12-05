@@ -18,13 +18,14 @@ elem.addEventListener('webkitfullscreenchange', function(e) {
          config.font="25px arial";
     }
 }, false);
-var config = {isFullScreen: false,font:"25px arial",fontColor:"rgba(0,0,0,0.9)"};
+var config = {isFullScreen: false,font:"25px arial",fontColor:"#fff"};
 function fullScreen() {
     var elem = document.getElementById("gameCanvas");
     elem.setAttribute("width", screen.width);
     elem.setAttribute("height", screen.height);
     container.width = screen.width;
     container.height = screen.height;
+    ctx.fillStyle = config.fontColor;
     ctx.fillText("Click Here To Start Game", container.width / 2 - 5 * 25, container.height / 2);
     if (elem.requestFullscreen) {
         elem.requestFullscreen();
@@ -44,7 +45,7 @@ function playAgain() {
     $("#gameCanvas").attr("onclick", "");
 }
 
-var container = {id: "container", width: 800, height: 500};
+var container = {id: "container", width: 1500, height: 700};
 var player = {id: "player", x: container.width / 2, y: container.height - 50, width: 50, height: 80, speedX: 20, speedY: 5};
 
 var objects;
@@ -138,7 +139,8 @@ function moveBalls() {
                     (object.centerX - object.radius * 0.75 > player.x && object.centerX - object.radius * 0.75 < player.x + player.width)
 
                     ) {
-                score = Math.ceil((new Date() - startTime) / 1000);
+                var finishTime=new Date();
+                score = Math.ceil((finishTime - startTime) / 1000);
                 if (score < 0)
                     score *= -1;
                 ctx.fillStyle = config.fontColor;

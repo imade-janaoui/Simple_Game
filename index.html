@@ -6,26 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>Save me</title>
+    <title>Save the ship</title>
 </head>
 <body>
+    <div class="discreption">
+        <p>You must keep the ship safe from the meteorite</p>
+        <div class="ship">
+            
+             <img src="img/comet.png" alt="">
+            <img src="img/comet.png" alt="">
+            <img src="img/comet.png" alt="">
+            <img src="img/comet.png" alt="">
+            <img src="img/comet.png" alt="">
+            <img src="img/comet.png" alt="">
+            <img src="img/comet.png" alt="">
+            <img src="img/comet.png" alt="">
+            <img src="img/rocket1.png" alt="">
+            <img src="img/rocket1.png" alt="">
+            <img src="img/rocket1.png" alt="">
+            <img src="img/rocket1.png" alt="">
+
+        </div>
+       
+    </div>
     
     <div>
-        <img src="img/save.png" style="display: none;" id="scream"/>
+        <img src="img/rocket.png" id="scream"/>
 
-        <img src="img/restart.png" style="display: none;" id="restart"/>
+        <img src="img/restart.png"  id="restart"/>
     </div>
-    <h3>Save Me</h3>
-    <div id="container" >
-        <canvas id="gameCanvas"  onclick="playAgain()">
+    <h3>Save the ship</h3>
+    <div id="container" width="1500" height="700" >
+        <canvas id="gameCanvas" width="1500" height="700"  onclick="playAgain()">
             Your browser does not support the HTML5 canvas tag.</canvas>
     </div>
-    <audio style="display: none;" autoplay="autoplay">
+    <audio  autoplay="autoplay">
     
         <source src="3D_Worldrunner_Main.mid" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
-    <div style="text-align: center;"><input type="button" value="FullScreen" onclick="fullScreen()"/></div>
+    <div id="FullScreen" >
+        <input type="button" value="FullScreen" onclick="fullScreen()"/>
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>
